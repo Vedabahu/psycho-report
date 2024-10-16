@@ -2,36 +2,32 @@
 
 \usepackage[a4paper, margin=1in]{geometry}
 \usepackage{multirow, graphicx}
+\usepackage{setspace}
+\usepackage[indent=0pt, skip=0.6cm]{parskip}
+
+\onehalfspacing
 
 \pagestyle{myheadings}
 
 \date{}
 \begin{document}	
 	\include{src/titlepage.tex}
-%	\tableofcontents
-%	\thispagestyle{empty}
-%	\newpage
-%
-%	\input{src/company.tex}
-%	\newpage
-%	\input{src/profile_details.tex}
-%	\newpage
-%	\input{src/employees.tex}
-%	\newpage
-%	\input{src/recruitment_and_selection.tex}
-%	\newpage
-%	\input{src/training_and_development.tex}
-%	\newpage
-%	\input{src/performance_evaluation.tex}	
-%	\newpage
-%	\input{src/rules_and_regulations.tex}
-%	\newpage
-%	\input{src/industrial_psychologist.tex}
-%	\newpage
-%	\input{src/growth.tex}
-%	\newpage
-%	\newpage
-%	\input{src/milestones.tex}	
-%	\newpage
+	\tableofcontents
+	\thispagestyle{empty}
+	\newpage
+
+	\include{src/company.tex}
+	\include{src/profile_details.tex}
+	\include{src/employees.tex}
+	\include{src/recruitment_and_selection.tex}
+	\include{src/training_and_development.tex}
+	\include{src/performance_evaluation.tex}	
+	\include{src/rules_and_regulations.tex}
+	\include{src/industrial_psychologist.tex}
+	\include{src/growth.tex}
+	\include{src/milestones.tex}
+	
+	\bibliography{src/references}
+	\bibliographystyle{ieeetr}
 	
 \end{document}
