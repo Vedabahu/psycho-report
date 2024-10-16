@@ -4,6 +4,8 @@
 \usepackage{multirow, graphicx}
 \usepackage{setspace}
 \usepackage[indent=0pt, skip=0.6cm]{parskip}
+\usepackage[nottoc, numbib]{tocbibind}
+\usepackage{subfig}
 
 \onehalfspacing
 
@@ -15,7 +17,8 @@
 	\tableofcontents
 	\thispagestyle{empty}
 	\newpage
-
+	
+	\include{src/abstract.tex}
 	\include{src/company.tex}
 	\include{src/profile_details.tex}
 	\include{src/employees.tex}
