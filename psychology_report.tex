@@ -6,6 +6,7 @@
 \usepackage[indent=0pt, skip=0.6cm]{parskip}
 \usepackage[nottoc, numbib]{tocbibind}
 \usepackage{subfig}
+\usepackage{url}
 
 \onehalfspacing
 
@@ -32,7 +33,10 @@
 	\include{src/milestones.tex}
 	\include{src/conclusion.tex}
 	
+	\begingroup
+	\setstretch{1.23}
 	\bibliography{src/references}
 	\bibliographystyle{ieeetr}
+	\endgroup
 	
 \end{document}
